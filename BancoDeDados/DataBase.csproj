@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\API Principal\API.Rest.csproj" />
-    <ProjectReference Include="..\Mapper\API.Mapper.csproj" />
+    <ProjectReference Include="..\Mapper\Mapper.csproj" />
   </ItemGroup>
 
 </Project>

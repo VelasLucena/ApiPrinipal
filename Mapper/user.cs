@@ -15,6 +15,6 @@ namespace User
         public int Idade { get; set; }
 
         [Required(ErrorMessage = "A data de nascimento {0} é obrigatório!")]
-        public DateTime DataDeNascimento { get; set; }
+        public DateOnly DataDeNascimento { get; set; }
     }
 }

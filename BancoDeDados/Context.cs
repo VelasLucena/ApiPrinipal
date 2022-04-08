@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using User;
 
 namespace DataBase
 {
@@ -8,6 +9,6 @@ namespace DataBase
         {
         }
 
-        public DbSet<User> User { get; set; }
+        public DbSet<UserClient> UserAluno { get; set; }
     }
 }

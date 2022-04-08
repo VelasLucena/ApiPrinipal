@@ -5,9 +5,9 @@ VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.Rest", "API Principal\API.Rest.csproj", "{0C9D9622-1DA9-422E-9EA6-45DA8CE51288}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.Mapper", "Mapper\API.Mapper.csproj", "{299AA76F-B675-436B-90D5-ED96AEA49326}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mapper", "Mapper\Mapper.csproj", "{299AA76F-B675-436B-90D5-ED96AEA49326}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.DataBase", "BancoDeDados\API.DataBase.csproj", "{C719A955-5199-43D1-B6F3-53A00FD8F21A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBase", "BancoDeDados\DataBase.csproj", "{C719A955-5199-43D1-B6F3-53A00FD8F21A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
