@@ -11,8 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\API Principal\API.Rest.csproj" />
-    <ProjectReference Include="..\Mapper\Mapper.csproj" />
+    <ProjectReference Include="..\API Principal\ApiRest.csproj" />
   </ItemGroup>
 
 </Project>
