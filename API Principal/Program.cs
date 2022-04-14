@@ -1,16 +1,31 @@
-using Microsoft.EntityFrameworkCore;
 using ApiRest.Models;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//Configuração
-builder.Services.AddEndpointsApiExplorer();
+// Add services to the container.
+
 builder.Services.AddControllers();
-builder.Services.AddDbContext<Context>
-    (options => options.UseSqlServer(
-    "Data Source=localhost; Initial Catalog=ProjetoEscola; Integrated Security=False; User ID=root; Passawor=; Connect Timeout=30; Encrypt=False; TrustServerCertificate=False"));
+
+builder.Services.AddDbContext<Context>(x => x.UseMySql(
+    builder.Configuration.GetConnectionString("UserDB"),
+    ServerVersion.Parse("8.0.29")));
+
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddEndpointsApiExplorer();
+
 var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+
+}
+
 app.UseHttpsRedirection();
+
 app.UseAuthorization();
+
 app.MapControllers();
+
 app.Run();
