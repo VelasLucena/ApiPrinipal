@@ -12,6 +12,11 @@ namespace ApiRest.Models
 
         }
 
-        public DbSet<UserModel> UserModel { get; set; } = null;
+        protected override void OnModelCreating (ModelBuilder builder)
+        {
+            base.OnModelCreating (builder);
+        }
+
+        public DbSet<UserModel> UserModel { get; set; }
     }
 }

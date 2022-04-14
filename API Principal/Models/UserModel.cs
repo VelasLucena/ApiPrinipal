@@ -6,6 +6,9 @@ namespace ApiRest.Models
 
     public class UserModel
     {
+        [Key]
+        public int Id { get; set; }
+
         [Required(ErrorMessage = "A matrícula é obrigatória!")]
         public int Matricula { get; set; }
 
@@ -15,6 +18,9 @@ namespace ApiRest.Models
 
         [Required(ErrorMessage = "A senha é obrigatório!")]
         public int Senha { get; set; }
+
+        [Required(ErrorMessage = "A data de nascimento é obrigatória")]
+        public DateTime DataDeNasimento { get; set; }
     }
 
 }
